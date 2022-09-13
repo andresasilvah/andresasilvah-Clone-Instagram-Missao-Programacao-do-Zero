@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" type="text/css" href="./_css/styles.css">
+</head>
+
+<body>
+    <div class="container-imagens">
+        <img src="./_imagens/celular.png" class="img-celular">
+        <img src="./_imagens/insta1.png" class="imagem-celular">
+        <img src="./_imagens/insta2.png" class="imagem-celular" id="troca-imagem">
+    </div>
+
+    <div class="container-itens">
+
+        <div class="container-form">
+            <img src="./_imagens/insta-logo.png" class="insta-logo">
+
+            <input placeholder="Telefone, nome de usuário ou e-mail">
+            <input placeholder="Senha">
+
+            <button>Entrar</button>
+
+            <a class="login-facebook" href="https://pt-br.facebook.com/" target="_blank">Entrar com o Facebook</a>
+            <a href="https://www.instagram.com/accounts/password/reset/" class="esqueceu-senha">Esqueceu a senha?</a>
+        </div>
+
+        <div class="cadastro">
+            <p class="paragrafo-conta">Não tem uma conta?</p><a href="https://www.instagram.com/accounts/emailsignup/?hl=pt-br" class="link-cadastro">Cadastra-se</a>
+        </div>
+
+        <p class="paragrafo-app">Obtenha o aplicativo</p>
+        <div class="container-app">
+            <a href="https://www.apple.com/br/app-store/" target="_blank"><img src="./_imagens/ios.png" alt="logo do ios" class="logo-app">
+            <a href="https://play.google.com/store" target="_blank"><img src="./_imagens/google.png" alt="logo do Google Play" class="logo-app">
+        </div>
+
+    </div>
+</body>
+<script>
+    let imagem = document.getElementById("troca-imagem")
+
+    function trocaImagem() {
+
+        if (imagem.style.opacity == 0) {
+            imagem.style.opacity = 1
+        } 
+        else {
+            imagem.style.opacity = 0
+        }
+
+    }
+
+    setInterval(function () {
+        trocaImagem()
+    }, 4000);
+
+</script>
+
+</html>
